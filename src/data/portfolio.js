@@ -5,7 +5,7 @@ import cloudpoussImg from "../assets/project-cloudpouss.jpg";
 export const profile = {
   name: "Vivek Vagadiya",
   title: "Frontend Engineer | React.js Developer",
-  email: "vivekvagadiya@example.com",
+  email: "vivekvagadiya47@gmail.com",
   github: "https://github.com/vivekvagadiya",
   linkedin: "https://www.linkedin.com/in/vivek-vagadiya-b35925340",
   resumeUrl: "/Vivek_Vagadiya_Resume.pdf",

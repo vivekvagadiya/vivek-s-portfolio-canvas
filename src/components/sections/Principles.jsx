@@ -15,7 +15,7 @@ const ICONS = { Network, Component, Gauge, ShieldCheck, Activity, Sparkles };
 
 export default function Principles() {
   return (
-    <section id="principles" className="relative py-24">
+    <section id="principles" className="relative pt-14 pb-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="How I build"

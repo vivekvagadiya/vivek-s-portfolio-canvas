@@ -15,7 +15,7 @@ const ICONS = { Layout, Boxes, Palette, Radio, Server, Wrench };
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-24">
+    <section id="skills" className="relative pt-14 pb-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Skills"
