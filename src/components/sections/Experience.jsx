@@ -6,7 +6,7 @@ import { fadeUp, stagger, viewport } from "@/lib/motion";
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-24">
+    <section id="experience" className="relative pt-14 pb-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Experience"

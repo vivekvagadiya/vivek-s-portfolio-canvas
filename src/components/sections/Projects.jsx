@@ -6,7 +6,7 @@ import { fadeUp, stagger, viewport } from "@/lib/motion";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24">
+    <section id="projects" className="relative pt-14 pb-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Selected Work"
@@ -90,7 +90,7 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  <div className="mt-6 flex gap-2">
+                  {/* <div className="mt-6 flex gap-2">
                     <a
                       href={p.github}
                       target="_blank"
@@ -109,7 +109,7 @@ export default function Projects() {
                       <ExternalLink className="h-3.5 w-3.5" />
                       Live Demo
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.article>
