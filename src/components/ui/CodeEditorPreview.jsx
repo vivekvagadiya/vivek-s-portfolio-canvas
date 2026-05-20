@@ -1,18 +1,18 @@
 export default function CodeEditorPreview() {
   return (
-    <div className="gradient-border relative overflow-hidden rounded-xl bg-zinc-950/80 shadow-2xl shadow-violet-500/10 backdrop-blur-xl">
-      <div className="flex items-center justify-between border-b border-white/5 px-4 py-3">
+    <div className="gradient-border w-full max-w-full relative overflow-hidden rounded-xl bg-zinc-950/80 shadow-2xl shadow-violet-500/10 backdrop-blur-xl">
+      <div className="flex items-center justify-between border-b border-white/5 px-3 py-3 sm:px-4">
         <div className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-green-400/70" />
         </div>
-        <span className="font-mono text-[11px] text-white/40">
+        <span className="font-mono text-[10px] text-white/40 sm:text-[11px]">
           hooks/useRBAC.js
         </span>
-        <span className="font-mono text-[11px] text-white/30">React 18</span>
+        <span className="font-mono text-[10px] text-white/30 sm:text-[11px]">React 18</span>
       </div>
-      <pre className="overflow-x-auto px-5 py-4 font-mono text-[12.5px] leading-relaxed">
+      <pre className="w-full overflow-x-auto px-3 py-4 font-mono text-[10px] leading-relaxed sm:px-4 sm:text-[11px] lg:px-5 lg:text-[12.5px] whitespace-pre-wrap [word-break:break-word]">
         <code className="text-white/85">
           <span className="text-violet-300">import</span>{" "}
           <span className="text-white">{`{ useMemo }`}</span>{" "}
@@ -67,7 +67,7 @@ export default function CodeEditorPreview() {
           <span className="text-white/70">{"}"}</span>
         </code>
       </pre>
-      <div className="border-t border-white/5 bg-white/[0.02] px-5 py-2.5 font-mono text-[11px] text-white/40">
+      <div className="border-t border-white/5 bg-white/[0.02] px-3 py-2.5 font-mono text-[10px] text-white/40 sm:px-4 sm:text-[11px]">
         <span className="text-emerald-300">●</span> Type-safe • Memoized •
         Zero-cost in render
       </div>

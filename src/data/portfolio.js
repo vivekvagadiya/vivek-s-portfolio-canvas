@@ -7,8 +7,8 @@ export const profile = {
   title: "Frontend Engineer | React.js Developer",
   email: "vivekvagadiya@example.com",
   github: "https://github.com/vivekvagadiya",
-  linkedin: "https://www.linkedin.com/in/vivekvagadiya",
-  resumeUrl: "/resume.pdf",
+  linkedin: "https://www.linkedin.com/in/vivek-vagadiya-b35925340",
+  resumeUrl: "/Vivek_Vagadiya_Resume.pdf",
 };
 
 export const heroTech = [
@@ -45,7 +45,7 @@ export const experience = [
     company: "Prometteur Solutions Pvt. Ltd.",
     role: "React.js Frontend Developer",
     duration: "Mar 2025 — Present",
-    location: "Pune, India",
+    location: "Surat, India",
     points: [
       "Built reusable component systems shipped across 3 enterprise products.",
       "Designed a 3-tier RBAC architecture with dynamic permission rendering.",

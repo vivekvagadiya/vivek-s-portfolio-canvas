@@ -17,9 +17,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "border-b border-white/5 bg-zinc-950/70 backdrop-blur-xl"
-          : "bg-transparent"
+        scrolled ? "border-b border-white/5 bg-zinc-950/70 backdrop-blur-xl" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
@@ -51,7 +49,7 @@ export default function Navbar() {
             size="sm"
             className="hidden bg-white text-zinc-900 hover:bg-white/90 md:inline-flex"
           >
-            <a href={profile.resumeUrl} download>
+            <a href={profile.resumeUrl} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </Button>
@@ -83,10 +81,11 @@ export default function Navbar() {
             <li>
               <a
                 href={profile.resumeUrl}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block rounded-md bg-white px-3 py-2 text-center text-sm font-medium text-zinc-900"
               >
-                Download Resume
+                View Resume
               </a>
             </li>
           </ul>
