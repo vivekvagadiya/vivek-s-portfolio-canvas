@@ -6,12 +6,13 @@ import {
   Radio,
   Server,
   Wrench,
+  ShieldCheck,
 } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { skillCategories } from "@/data/portfolio";
 import { fadeUp, stagger, viewport } from "@/lib/motion";
 
-const ICONS = { Layout, Boxes, Palette, Radio, Server, Wrench };
+const ICONS = { Layout, Boxes, Palette, Radio, Server, Wrench, ShieldCheck };
 
 export default function Skills() {
   return (
