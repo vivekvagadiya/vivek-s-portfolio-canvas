@@ -8,6 +8,7 @@ export default defineConfig({
     server: { entry: "server" },
     prerender: {
       enabled: true,
+      filter: (page) => !page.path.endsWith(".pdf"),
     },
   },
 });
