@@ -39,10 +39,7 @@ export default function Hero() {
               variants={fadeUp}
               className="mt-6 max-w-xl text-pretty text-base text-white/65 sm:text-lg"
             >
-              Frontend Developer with production experience building scalable
-              React.js applications across HRMS, real-time betting systems, and
-              enterprise service platforms. Specialized in Redux Toolkit, RBAC
-              architecture, REST APIs, and performance optimization.
+              React.js Frontend Developer with 1.5 years of production experience building web applications across sports betting, casino, wallet management, HRMS, and service-based platforms. Specialized in Redux Toolkit, RBAC, REST APIs, WebSockets, and Material UI.
             </motion.p>
 
             <motion.div

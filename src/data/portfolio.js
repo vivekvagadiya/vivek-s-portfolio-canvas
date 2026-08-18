@@ -1,11 +1,14 @@
 import hrmsImg from "../assets/project-hrms.jpg";
 import bettingImg from "../assets/project-betting.jpg";
 import cloudpoussImg from "../assets/project-cloudpouss.jpg";
+import gocheckamImg from "../assets/project-gocheckam.jpg";
 
 export const profile = {
   name: "Vivek Vagadiya",
-  title: "Frontend Engineer | React.js Developer",
+  title: "React.js Frontend Developer",
   email: "vivekvagadiya47@gmail.com",
+  phone: "+91 9574410907",
+  location: "Surat, Gujarat, India",
   github: "https://github.com/vivekvagadiya",
   linkedin: "https://www.linkedin.com/in/vivek-vagadiya-b35925340",
   resumeUrl: "/Vivek_Vagadiya_Resume.pdf",
@@ -14,30 +17,41 @@ export const profile = {
 export const heroTech = [
   "React.js",
   "Next.js",
+  "JavaScript (ES6+)",
+  "TypeScript",
   "Redux Toolkit",
   "Tailwind CSS",
   "Material UI",
-  "Firebase",
-  "Node.js",
-  "MongoDB",
   "WebSocket",
+  "Firebase",
 ];
 
 export const stats = [
-  { value: "3+", label: "Production Applications" },
-  { value: "30+", label: "Components Refactored" },
-  { value: "6+", label: "Betting Modules" },
-  { value: "20%", label: "Faster UI Development" },
+  { value: "1.5+", label: "Years Production Experience" },
+  { value: "6+", label: "Production Web Applications" },
+  { value: "6+", label: "Bet Types & Realtime Modules" },
+  { value: "sub-200ms", label: "Live WebSocket Sync" },
 ];
 
 export const aboutBullets = [
-  "1+ years of production frontend experience",
-  "Building enterprise HRMS systems",
-  "Real-time betting application engineering",
-  "Scalable frontend architecture",
-  "Strong focus on reusable components",
-  "Performance optimization mindset",
-  "Growing MERN-stack backend skills",
+  "1.5 years of production React.js experience across HRMS, sports betting, casino, wallet & service platforms",
+  "Architected Role-Based Access Control (RBAC) systems with dynamic permission-based UI rendering",
+  "Deep state management expertise using Redux Toolkit slices, selectors & Context API",
+  "Integrated REST APIs with Axios, optimistic updates, error handling & loading boundaries",
+  "Built real-time features using WebSockets (live odds, chat, announcements, daily streak rewards)",
+  "Payment gateway, KYC verification, Google OAuth, and OTP authentication workflows",
+  "B.E. Information Technology graduate from SVIT, Vasad (CGPA: 8.5)",
+];
+
+export const education = [
+  {
+    degree: "B.E. — Information Technology",
+    institution: "Sardar Vallabhbhai Patel Institute of Technology (SVIT), Vasad",
+    cgpa: "8.5 CGPA",
+    year: "2025",
+    details:
+      "Core coursework in Web Technologies, Software Engineering, Data Structures, Algorithms, and Database Management.",
+  },
 ];
 
 export const experience = [
@@ -47,33 +61,34 @@ export const experience = [
     duration: "Mar 2025 — Present",
     location: "Surat, India",
     points: [
-      "Built reusable component systems shipped across 3 enterprise products.",
-      "Designed a 3-tier RBAC architecture with dynamic permission rendering.",
-      "Managed deeply nested state with Redux Toolkit slices and selectors.",
-      "Integrated REST APIs with optimistic updates and error boundaries.",
-      "Refactored legacy class components into modern hook-based modules.",
-      "Collaborated in Agile sprints, code reviews and architectural planning.",
+      "Built reusable and responsive UI components using React.js and Material UI, improving cross-device consistency across multiple screen sizes.",
+      "Designed & developed Role-Based Access Control (RBAC) system enabling dynamic UI rendering for Admin, HR, and User roles.",
+      "Managed global application state using Redux Toolkit for live betting & platform applications handling multiple REST endpoints & real-time updates.",
+      "Refactored legacy components into reusable modules, improving code maintainability and cutting duplicate implementation.",
+      "Integrated REST APIs using Axios with robust error handling, optimistic updates, and loading states.",
+      "Collaborated in Agile sprints, code reviews, and architectural planning for enterprise client projects.",
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "RBAC HRMS Platform",
-    tagline: "AI-powered recruitment & access control",
-    image: hrmsImg,
+    title: "GoCheckAM Web & Admin",
+    tagline: "Sports betting, casino, wallet & user management",
+    image: gocheckamImg,
     description:
-      "AI-powered recruitment and HRMS platform with role-based access control, recruitment workflows, candidate management, and AI-generated job descriptions.",
+      "Comprehensive Web & Admin platform supporting sports betting, live casino, wallet operations, payment gateway integration, deposit/withdrawal flows, KYC verification, and user management.",
     features: [
-      "3-tier RBAC system",
-      "Dynamic permission rendering",
-      "AI job-description generation",
-      "Recruitment workflows",
-      "Route-level lazy loading",
-      "Redux Toolkit state management",
+      "Payment gateway & deposit/withdrawal flows",
+      "KYC verification & secure wallet operations",
+      "WebSocket live chat & daily streak rewards",
+      "Google OAuth & OTP authentication",
+      "Multi-language support (i18next)",
+      "Yup-based form validation & state sync",
     ],
-    tech: ["React.js", "Redux Toolkit", "Material UI", "REST APIs", "Node.js"],
-    highlight: "Reduced JD creation time from 45 minutes to under 2 minutes.",
+    tech: ["React.js", "Redux Toolkit", "SCSS", "REST APIs", "WebSocket", "i18next"],
+    highlight:
+      "Integrated end-to-end payment/KYC flows, real-time WebSocket live chat, and daily streak reward systems.",
     github: "#",
     demo: "#",
   },
@@ -82,17 +97,38 @@ export const projects = [
     tagline: "Real-time odds at sub-200ms",
     image: bettingImg,
     description:
-      "Real-time betting application with live odds synchronization, multi-role hierarchy, and complex betting workflows for operators and players.",
+      "Admin and User platforms supporting six betting types with sub-200ms odds updates, multi-role hierarchy, and live UI synchronization for operators and players.",
     features: [
-      "Real-time odds updates",
-      "WebSocket integration",
-      "6 distinct betting systems",
-      "Nested state management",
-      "Live UI synchronization",
-      "Risk management panels",
+      "6 bet types: Straight, Parlay, Teaser, IfBet, A-R, PropFecta",
+      "4-tier hierarchy: Admin → Bookie → Agent → Customer",
+      "Admin risk, juice & limit controls",
+      "Sub-200ms WebSocket odds sync",
+      "Redux Toolkit + Context API nested state",
+      "Live UI & market synchronization",
     ],
-    tech: ["React.js", "Redux Toolkit", "WebSocket", "Context API"],
-    highlight: "Achieved sub-200ms live UI updates across 6 betting modules.",
+    tech: ["React.js", "Redux Toolkit", "WebSocket", "Context API", "REST APIs"],
+    highlight:
+      "Engineered sub-200ms live odds updates across 6 bet types and 4-tier user hierarchy.",
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "RBAC HRMS Platform",
+    tagline: "AI-powered recruitment & access control",
+    image: hrmsImg,
+    description:
+      "End-to-end recruitment and HRMS platform featuring multi-stage candidate selection workflows, 3-tier RBAC system, and OpenAI/OpenRouter AI job description generation.",
+    features: [
+      "End-to-end recruitment pipeline",
+      "OpenAI / OpenRouter AI JD generator",
+      "3-tier RBAC dynamic rendering",
+      "Candidate & application tracking",
+      "Redux Toolkit state management",
+      "Route-level lazy loading",
+    ],
+    tech: ["React.js", "Redux Toolkit", "Material UI", "REST APIs", "Node.js"],
+    highlight:
+      "Reduced job description creation time from 45 minutes to under 2 minutes using AI integration.",
     github: "#",
     demo: "#",
   },
@@ -101,17 +137,18 @@ export const projects = [
     tagline: "Service marketplace with realtime negotiation",
     image: cloudpoussImg,
     description:
-      "Service marketplace platform with realtime chat, booking lifecycle, offer / counter-offer negotiation system and Firebase synchronization.",
+      "Service marketplace platform with real-time 1:1 chat, booking lifecycle, offer / counter-offer negotiation system, and Firebase synchronization.",
     features: [
-      "Realtime chat",
-      "Offer / counter-offer workflow",
-      "Firebase realtime database",
-      "End-to-end booking management",
-      "Admin dashboard",
-      "Drop-off analytics",
+      "Real-time 1:1 chat via Firebase",
+      "Offer / counter-offer negotiation workflow",
+      "Service booking lifecycle management",
+      "Admin dashboard for users & services",
+      "Automated payment trigger handling",
+      "Responsive Tailwind CSS UI",
     ],
-    tech: ["Next.js", "Firebase", "Tailwind CSS", "REST APIs"],
-    highlight: "Improved booking flow continuity and reduced drop-offs.",
+    tech: ["React.js", "Next.js", "Firebase", "Tailwind CSS", "REST APIs"],
+    highlight:
+      "Built real-time chat and negotiation workflow with instant booking payment triggers.",
     github: "#",
     demo: "#",
   },
@@ -119,34 +156,34 @@ export const projects = [
 
 export const skillCategories = [
   {
-    name: "Frontend",
+    name: "Frontend Core",
     icon: "Layout",
-    skills: ["React.js", "Next.js", "JavaScript", "HTML5", "CSS3"],
+    skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "SCSS"],
   },
   {
     name: "State Management",
     icon: "Boxes",
-    skills: ["Redux Toolkit", "Context API", "RTK Query"],
+    skills: ["Redux", "Redux Toolkit", "Context API", "RTK Query"],
   },
   {
-    name: "Styling & UI",
+    name: "UI & Styling",
     icon: "Palette",
-    skills: ["Tailwind CSS", "Material UI", "shadcn/ui", "Framer Motion"],
+    skills: ["Material UI (MUI)", "Tailwind CSS", "SCSS", "shadcn/ui", "Framer Motion"],
   },
   {
-    name: "Real-Time Systems",
+    name: "Real-Time & Auth",
     icon: "Radio",
-    skills: ["WebSocket", "Firebase Realtime DB", "Socket.IO"],
+    skills: ["WebSocket", "Firebase Realtime DB", "Google OAuth", "OTP Auth", "i18next"],
   },
   {
-    name: "Backend",
-    icon: "Server",
-    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
-  },
-  {
-    name: "Tools",
+    name: "Tools & API",
     icon: "Wrench",
-    skills: ["Git", "GitHub", "Postman", "Vite", "Webpack"],
+    skills: ["REST APIs", "Axios", "Yup Validation", "Postman", "Git", "GitHub", "Vite"],
+  },
+  {
+    name: "Core Concepts",
+    icon: "ShieldCheck",
+    skills: ["RBAC Architecture", "Authentication", "Performance Optimization", "Code Reusability"],
   },
 ];
 
@@ -157,14 +194,14 @@ export const principles = [
     desc: "Feature-sliced module boundaries, predictable data flow, and zero-cost composition.",
   },
   {
-    title: "Reusable Components",
+    title: "Reusable Component Systems",
     icon: "Component",
-    desc: "Headless primitives with composable variants — built once, used everywhere.",
+    desc: "Headless primitives with composable variants — built once, used across features.",
   },
   {
     title: "Performance Optimization",
     icon: "Gauge",
-    desc: "Code splitting, memoization, virtualization and a tight runtime budget.",
+    desc: "Code splitting, lazy loading, memoization, and sub-200ms real-time budgets.",
   },
   {
     title: "RBAC & Authorization",
@@ -174,18 +211,18 @@ export const principles = [
   {
     title: "Real-Time Synchronization",
     icon: "Activity",
-    desc: "WebSocket-driven state with deterministic merges and back-pressure handling.",
+    desc: "WebSocket-driven state with deterministic merges and live UI feedback.",
   },
   {
     title: "Clean Maintainable Code",
     icon: "Sparkles",
-    desc: "Small files, named exports, intention-revealing names, and tests where it counts.",
+    desc: "Small files, named exports, intention-revealing names, and error-resilient APIs.",
   },
 ];
 
 export const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "Experience & Education" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
