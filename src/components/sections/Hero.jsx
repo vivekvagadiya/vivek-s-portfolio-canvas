@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { heroTech } from "@/data/portfolio";
+import { heroTech, profile } from "@/data/portfolio";
 import CodeEditorPreview from "@/components/ui/CodeEditorPreview";
 import { fadeUp, stagger } from "@/lib/motion";
 
@@ -65,7 +65,7 @@ export default function Hero() {
                 size="lg"
                 className="h-11 border-white/15 bg-white/[0.03] px-5 text-white hover:bg-white/10 hover:text-white"
               >
-                <a href="/resume.pdf" download>
+                <a href={profile.resumeUrl} download>
                   <Download className="mr-1 h-4 w-4" />
                   Download Resume
                 </a>
